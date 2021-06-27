@@ -26,7 +26,11 @@ app.get('', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-    res.render('about', { title: 'About', body: 'There is no much story here' })
+    res.render('about', { 
+        title: 'About', 
+        body: 'This site was created by Nicolas Vega. '
+            + 'It uses data from mapbox.com and weatherstack.com'
+        })
 })
 
 app.get('/weather', (req, res) => {
